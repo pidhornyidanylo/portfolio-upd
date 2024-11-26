@@ -1,0 +1,45 @@
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--main-dark-blue);
+  position: relative;
+}
+
+.link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--main-dark-blue);
+  animation: underline 0.3s ease forwards;
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.link.burger {
+  color: var(--main-light-blue);
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.link.burger.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--main-light-blue);
+  animation: underline 0.3s ease forwards;
+}

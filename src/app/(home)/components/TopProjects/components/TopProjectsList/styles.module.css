@@ -1,0 +1,41 @@
+.projectsContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.cardsContainer {
+  display: grid;
+  justify-content: center;
+  min-height: 1250px;
+  min-width: 992px;
+  grid-template-columns: repeat(2, 485px);
+  grid-template-rows: repeat(2, 600px);
+  grid-column-gap: 70px;
+  grid-row-gap: 50px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 1200px) {
+  .cardsContainer {
+    min-width: 860px;
+    min-height: 900px;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 500px);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardsContainer {
+    min-width: 500px;
+    min-height: 900px;
+    grid-template-columns: 485px;
+    grid-template-rows: repeat(4, 600px);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+  }
+}

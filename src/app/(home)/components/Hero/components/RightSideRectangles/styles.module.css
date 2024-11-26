@@ -1,0 +1,48 @@
+.rightRectangleContainer {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transform: translateX(300px);
+  transform: scale(1);
+}
+
+.rightRectangleContainer > * {
+  transform: scaleX(-1) scaleY(1);
+}
+
+@media (max-width: 992px) {
+  .rightRectangleContainer {
+    top: 30px;
+    right: -150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightRectangleContainer {
+    transform: scale(0.9) translateX(100px);
+  }
+}
+
+@media (max-width: 576px) {
+  .rightRectangleContainer {
+    transform: scale(0.75) translateX(160px) translateY(50px);
+  }
+}
+
+@media (max-height: 900px) {
+  .rightRectangleContainer {
+    transform: scale(0.5) translateX(500px) translateY(-100px);
+  }
+}
+
+@media (max-height: 700px) {
+  .rightRectangleContainer {
+    transform: scale(0.5) translateX(500px) translateY(-100px);
+  }
+}
+
+@media (max-height: 480px) {
+  .rightRectangleContainer {
+    transform: scale(0.25) translateX(1200px) translateY(-300px);
+  }
+}

@@ -1,0 +1,31 @@
+:root {
+  --heading-font: 'Playfair Display', serif;
+  --text-font: 'Cormorant', sans-serif;
+  --main-dark-blue: #03045e;
+  --main-light-blue: #caf0f8;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--text-font);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 24px;
+  background-color: var(--main-light-blue);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+main {
+  flex: 1;
+}

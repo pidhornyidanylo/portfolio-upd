@@ -1,0 +1,197 @@
+.contentContainer {
+  position: absolute;
+  width: 650px;
+  height: 500px;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topLeftAngle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topLeftAngle .vertical {
+  position: absolute;
+  top: -20;
+  left: 20px;
+  opacity: 0;
+  background-color: black;
+  width: 8px;
+  height: 500px;
+  z-index: 5;
+}
+
+.topLeftAngle .horizontal {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  left: 0;
+  background-color: black;
+  width: 500px;
+  height: 8px;
+}
+
+.bottomRightAngle {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: -10px;
+  right: -20px;
+}
+
+.bottomRightAngle .vertical {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  opacity: 0;
+  background-color: black;
+  width: 8px;
+  height: 500px;
+  z-index: 5;
+}
+
+.bottomRightAngle .horizontal {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  left: -20px;
+  background-color: black;
+  width: 500px;
+  height: 8px;
+}
+
+.name {
+  height: 350px;
+  font-family: var(--heading-font);
+  color: var(--main-dark-blue);
+  font-size: 5.5em;
+  line-height: normal;
+  text-align: center;
+}
+
+.info {
+  max-width: 650px;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .name {
+    height: 300px;
+    font-size: 4.5em;
+  }
+
+  .info {
+    max-width: 650px;
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .name {
+    height: 280px;
+    font-size: 4em;
+  }
+
+  .bottomRightAngle {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topLeftAngle {
+    display: none;
+  }
+
+  .bottomRightAngle {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .contentContainer {
+    position: absolute;
+    width: 90%;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .name {
+    height: 200px;
+    font-family: var(--heading-font);
+    color: var(--main-dark-blue);
+    font-size: 3em;
+  }
+
+  .info {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+@media (max-height: 900px) {
+  .contentContainer {
+    position: absolute;
+    max-width: 650px;
+    height: 350px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottomRightAngle {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+  }
+
+  .name {
+    height: 200px;
+    font-size: 3em;
+  }
+
+  .info {
+    max-width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+@media (max-height: 480px) {
+  .contentContainer {
+    position: absolute;
+    max-width: 100%;
+    height: 250px;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottomRightAngle {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+  }
+
+  .name {
+    height: 120px;
+    font-size: 1.8em;
+  }
+
+  .info {
+    max-width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
